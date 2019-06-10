@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理界面</title>
+    <link rel="stylesheet" href="./stylesheets/managerPage.css">
+    <link rel="stylesheet" href="./stylesheets/iconfont.css">
+</head>
+<body>
+
+    <div class="navigate">
+        <image class="n-image" src="./images/server/manager.png"></image>
+        <div class="n-con">
+            <div class="n-item n-item-active">
+                <div><i class="iconfont icon-yonghu"></i> 用户信息</div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-cheliang-"> 车辆信息</i></div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-changjianwenti"> 问问</i></div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-liaotianjilu"> 聊天记录</i></div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-jubao"></i> 举报管理</div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-iconfontzhizuobiaozhun21"></i> 预约卖车</div>
+            </div>
+            <div class="n-item">
+                <div><i class="iconfont icon-tuichu"></i> 退出登录</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="mask"></div>
+        <div class="userPage">
+            <h3>用户信息</h3>
+            <div class="u-container">
+                <div class="loadingBox">
+                    <img class="loading" src="./images/server/loading.png">
+                </div>
+            </div>
+            <div class="updateBox">
+                <div class="ub-item">
+                    <label for="uid">UID</label><input id="uid" type="text" value="diken" readonly="readonly">
+                </div>
+                <div class="ub-item">
+                    <label for="password">密码</label><input id="password" type="text" value="diken123">
+                </div>
+                <div class="ub-item">
+                    <label for="name">昵称</label><input id="name" type="text" value="张三">
+                </div>
+                <div class="ub-item">
+                    <label for="sex">性别</label><input id="sex" type="text" value="男">
+                </div>
+                <div class="ub-item">
+                    <label for="location">地址</label><input id="location" type="text" value="杭州">
+                </div>
+                <div class="ub-item">
+                    <label for="phone">电话</label><input id="phone" type="text" value="512210">
+                </div>
+                <div class="ub-item">
+                    <label for="link">头像</label><input id="link" type="text" value="test.png">
+                </div>
+                <div class="ub-item">
+                    <label for="score">行为分</label><input id="score" type="text" value="100">
+                </div>
+                <div class="ub-item">
+                    <label for="time">注册时间</label><input id="time" type="text" value="2019-3-11" readonly="readonly">
+                </div>
+                <div class="ub-button">
+                    <div class="cancel">取消</div>
+                    <div class="submit">确认</div>
+                </div>
+            </div>
+        </div>
+        <div class="carPage">
+            <h3>车辆信息</h3>
+            <div class="c-init-box">
+                <img class="c-init-box-close" src="./images/server/close2.png" alt="close">
+                <p class="c-init-box-content">当前有<span>32601</span>条车辆信息记录，输入汽车CID即可开始相关操作。</p>
+            </div>
+            <div class="c-search-box">
+                <input class="c-search-box-input" type="text" placeholder="输入CID查找要操作的车辆">
+                <div class="c-search-box-btn">
+                    <img src="./images/server/search.png" alt="search" >
+                </div>
+            </div>
+            <div class="c-show-box">
+                <div class="c-show-empty-box">
+                    <img src="./images/server/empty.png" alt="empty">
+                    <p>当前内容为空喔~</p>
+                </div>
+                <div class="c-show-table-container">
+                </div>
+            </div>
+        </div>
+        <div class="questionPage">
+            <h3>问问</h3>
+            <div class="q-container">
+                <div class="loadingBox">
+                    <img class="loading" src="./images/server/loading.png">
+                </div>
+            </div>
+            <div class="q-reply-container">
+                <img id="q-reply-close" src="./images/server/close2.png">
+                <div class="q-reply-box">
+                    <div class="loadingBox">
+                        <img class="loading" src="./images/server/loading.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatPage">
+            <h3>聊天记录</h3>
+            <div class="c-container">
+                <div class="loadingBox">
+                    <img class="loading" src="./images/server/loading.png">
+                </div>
+            </div>
+        </div>
+        <div class="reportPage">
+            <h3>举报管理</h3>
+            <div class="r-container">
+                <div class="loadingBox">
+                    <img class="loading" src="./images/server/loading.png">
+                </div>
+            </div>
+        </div>
+        <div class="salePage">
+            <h3>预约卖车</h3>
+            <div class="s-container">
+                <div class="loadingBox">
+                    <img class="loading" src="./images/server/loading.png">
+                </div>
+            </div>
+            <div class="s-userBox">
+                <img id="close" class="close" src="./images/server/close2.png" alt="close">
+                <div class="s-item">
+                    <label for="lookCarPlace" class="s-userBox-title">预约看车地</label>
+                    <input id="lookCarPlace" type="text" value="">
+                </div>
+                <div class="s-item">
+                    <span>电话联系</span>
+                    <div>
+                        <img id="showQrcode" src="./images/server/qrcode.png" alt="二维码">
+                    </div>
+                </div>
+                <div id="qrcode"></div>
+                <div id="s-btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascripts/jquery.3.3.1.js"></script>
+    <script src="./javascripts/qrcode.js"></script>
+    <script src="./javascripts/managerPageFunction.js"></script>
+    <script src="./javascripts/managerPage.js"></script>
+</body>
+</html>

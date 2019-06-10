@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>二手车平台</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+  </head>
+  <body>
+    <header class="header">
+        <div class="h-con">
+            <a class="logo" href="/"></a>
+            <div class="home">
+                <a href="/">首页</a>
+            </div>
+            <div class="func">
+                <a href="/">功能一</a>
+            </div>
+            <div class="func">
+                <a href="/">功能二</a>
+            </div>
+            <div class="func">
+                <a href="/">功能三</a>
+            </div>
+            <div class="func">
+                <a href="/">功能四</a>
+            </div>
+            <div class="noUser">
+                <a href="/userLogin">登录</a>
+                <i></i>
+                <a href="/register">注册</a>
+            </div>
+            <div class="hasUser">
+                <span>欢迎你，</span>
+                <a class="username" href="/"></a>
+                <a class='quit' href="/">/注销</a>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <div class="city">
+            <span>城市：</span>
+            <a href="" class="location select">不限</a>
+            <a href="" class="location">杭州</a>
+            <a href="" class="location">宁波</a>
+            <a href="" class="location">湖州</a>
+            <a href="" class="location">绍兴</a>
+            <a href="" class="location">丽水</a>
+            <a href="" class="location">台州</a>
+            <a href="" class="location">衢州</a>
+            <a href="" class="location">金华</a>
+            <a href="" class="location">嘉兴</a>
+            <a href="" class="location">温州</a>
+        </div>
+        <div class="carname">
+            <span>品牌：</span>
+            <a href="" class="carType select">不限</a>
+            <a href="" class="carType">大众</a>
+            <a href="" class="carType">别克</a>
+            <a href="" class="carType">雪佛兰</a>
+            <a href="" class="carType">福特</a>
+            <a href="" class="carType">丰田</a>
+            <a href="" class="carType">奥迪</a>
+            <a href="" class="carType">哈弗</a>
+            <a href="" class="carType">现代</a>
+            <a href="" class="carType">宝马</a>
+            <a href="" class="carType">吉利</a>
+            <a href="" class="carType">日产</a>
+            <a href="" class="carType">奔驰</a>
+            <a href="" class="carType">标志</a>
+            <a href="" class="carType">长安</a>
+            <a href="" class="carType"></a>
+            <div class="more-car">
+                <i></i>
+                <span>更多</span>
+            </div>
+            <div class="all-car">
+                <div class="all-left">
+                    <div class="car-list height-30px">
+                        <span>A</span>
+                        <div class="car-link height-30px">
+                            <a href="" class="carType">阿尔法·罗密欧</a>
+                            <a href="" class="carType">奥迪</a>
+                        </div>
+                    </div>
+                    <div class="car-list  height-90px">
+                        <span>B</span>
+                        <div class="car-link">
+                            <a href="" class="carType">宝马</a>
+                            <a href="" class="carType">别克</a>
+                            <a href="" class="carType">比亚迪</a>
+                            <a href="" class="carType">本田</a>
+                            <a href="" class="carType">保时捷</a>
+                            <a href="" class="carType">标志</a>
+                            <a href="" class="carType">宝骏</a>
+                            <a href="" class="carType">奔腾</a>
+                            <a href="" class="carType">宝沃</a>
+                            <a href="" class="carType">北汽威旺</a>
+                            <a href="" class="carType">北汽幻速</a>
+                            <a href="" class="carType">北汽绅宝</a>
+                            <a href="" class="carType">北京</a>
+                            <a href="" class="carType">比速汽车</a>
+                            <a href="" class="carType">北汽</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>C</span>
+                        <div class="car-link">
+                            <a href="" class="carType">长安</a>
+                            <a href="" class="carType">长城</a>
+                            <a href="" class="carType">长安欧尚</a>
+                            <a href="" class="carType">长安轻型车</a>
+                            <a href="" class="carType">传祺</a>
+                            <a href="" class="carType">长安商用</a>
+                            <a href="" class="carType">昌河</a>
+                            <a href="" class="carType">川汽野马</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>D</span>
+                        <div class="car-link">
+                            <a href="" class="carType">大众</a>
+                            <a href="" class="carType">东风</a>
+                            <a href="" class="carType">东风风行</a>
+                            <a href="" class="carType">东风风神</a>
+                            <a href="" class="carType">东风小康</a>
+                            <a href="" class="carType">东风风光</a>
+                            <a href="" class="carType">道奇</a>
+                            <a href="" class="carType">DS</a>
+                            <a href="" class="carType">东南</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>F</span>
+                        <div class="car-link">
+                            <a href="" class="carType">福特</a>
+                            <a href="" class="carType">丰田</a>
+                            <a href="" class="carType">菲亚特</a>
+                            <a href="" class="carType">福田</a>
+                            <a href="" class="carType">福迪</a>
+                            <a href="" class="carType">福田商用车</a>
+                            <a href="" class="carType">法拉利</a>
+                            <a href="" class="carType">福汽启腾</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>G</span>
+                        <div class="car-link">
+                            <a href="" class="carType">观致</a>
+                            <a href="" class="carType">广汽吉奥</a>
+                            <a href="" class="carType">广汽传祺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-right">
+                    <div class="car-list height-30px">
+                        <span>R</span>
+                        <div class="car-link">
+                            <a href="" class="carType">日产</a>
+                            <a href="" class="carType">荣威</a>
+                            <a href="" class="carType">瑞麒</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>S</span>
+                        <div class="car-link">
+                            <a href="" class="carType">三菱</a>
+                            <a href="" class="carType">斯柯达</a>
+                            <a href="" class="carType">斯巴鲁</a>
+                            <a href="" class="carType">smart</a>
+                            <a href="" class="carType">双龙</a>
+                            <a href="" class="carType">上汽大通</a>
+                            <a href="" class="carType">斯威</a>
+                            <a href="" class="carType">萨博</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>W</span>
+                        <div class="car-link">
+                            <a href="" class="carType">沃尔沃</a>
+                            <a href="" class="carType">五菱</a>
+                            <a href="" class="carType">威麟</a>
+                            <a href="" class="carType">潍柴英致</a>
+                            <a href="" class="carType">WEY</a>
+                            <a href="" class="carType">五十铃</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>X</span>
+                        <div class="car-link">
+                            <a href="" class="carType">现代</a>
+                            <a href="" class="carType">雪佛兰</a>
+                            <a href="" class="carType">雪铁龙</a>
+                            <a href="" class="carType">夏利</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>Y</span>
+                        <div class="car-link">
+                            <a href="" class="carType">一汽</a>
+                            <a href="" class="carType">依维柯</a>
+                            <a href="" class="carType">英菲尼迪</a>
+                            <a href="" class="carType">永源</a>
+                            <a href="" class="carType">驭胜</a>
+                            <a href="" class="carType">野马汽车</a>
+                            <a href="" class="carType">英致</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>Z</span>
+                        <div class="car-link">
+                            <a href="" class="carType">众泰</a>
+                            <a href="" class="carType">中华</a>
+                            <a href="" class="carType">中兴</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-center">
+                    <div class="car-list height-60px">
+                        <span>H</span>
+                        <div class="car-link">
+                            <a href="" class="carType">哈弗</a>
+                            <a href="" class="carType">哈飞</a>
+                            <a href="" class="carType">海马</a>
+                            <a href="" class="carType">汉腾</a>
+                            <a href="" class="carType">黄海</a>
+                            <a href="" class="carType">华普</a>
+                            <a href="" class="carType">华颂</a>
+                            <a href="" class="carType">华泰</a>
+                            <a href="" class="carType">红旗</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>J</span>
+                        <div class="car-link">
+                            <a href="" class="carType">吉利</a>
+                            <a href="" class="carType">Jeep</a>
+                            <a href="" class="carType">江淮</a>
+                            <a href="" class="carType">江铃</a>
+                            <a href="" class="carType">捷豹</a>
+                            <a href="" class="carType">金杯</a>
+                            <a href="" class="carType">君马汽车</a>
+                            <a href="" class="carType">江铃集团轻汽</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>K</span>
+                        <div class="car-link">
+                            <a href="" class="carType">凯迪拉克</a>
+                            <a href="" class="carType">开瑞</a>
+                            <a href="" class="carType">凯翼</a>
+                            <a href="" class="carType">克莱斯勒</a>
+                            <a href="" class="carType">卡威</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-60px">
+                        <span>L</span>
+                        <div class="car-link">
+                            <a href="" class="carType">雷克萨斯</a>
+                            <a href="" class="carType">路虎</a>
+                            <a href="" class="carType">雷诺</a>
+                            <a href="" class="carType">莲花汽车</a>
+                            <a href="" class="carType">猎豹</a>
+                            <a href="" class="carType">力帆</a>
+                            <a href="" class="carType">铃木</a>
+                            <a href="" class="carType">理念</a>
+                            <a href="" class="carType">林肯</a>
+                            <a href="" class="carType">陆风</a>
+                            <a href="" class="carType">兰博基尼</a>
+                            <a href="" class="carType">领克</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>M</span>
+                        <div class="car-link">
+                            <a href="" class="carType">MINI</a>
+                            <a href="" class="carType">玛莎拉蒂</a>
+                            <a href="" class="carType">马自达</a>
+                            <a href="" class="carType">名爵</a>
+                            <a href="" class="carType">MG</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>N</span>
+                        <div class="car-link">
+                            <a href="" class="carType">纳智捷</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>O</span>
+                        <div class="car-link">
+                            <a href="" class="carType">欧宝</a>
+                            <a href="" class="carType">讴歌</a>
+                        </div>
+                    </div>
+                    <div class="car-list height-30px">
+                        <span>Q</span>
+                        <div class="car-link">
+                            <a href="" class="carType">起亚</a>
+                            <a href="" class="carType">奇瑞</a>
+                            <a href="" class="carType">启辰</a>
+                            <a href="" class="carType">青年莲花</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="price">
+            <span>价格：</span>
+            <a href="" class="carPrice select" data-info="0">不限</a>
+            <a href="" class="carPrice" data-info="1">3万以下</a>
+            <a href="" class="carPrice" data-info="2">3-5万</a>
+            <a href="" class="carPrice" data-info="3">6-10万</a>
+            <a href="" class="carPrice" data-info="4">11-15万</a>
+            <a href="" class="carPrice" data-info="5">16-20万</a>
+            <a href="" class="carPrice" data-info="6">21-30万</a>
+            <a href="" class="carPrice" data-info="7">30万以上</a>
+        </div>
+        <div class="more">
+            <span>更多：</span>
+            <div class='ca-title'>
+                <span>车龄</span>
+                <i></i>
+            </div>
+            <div class="ca-list">
+                <a href="" class="carAge" data-info="0">
+                    <i></i>
+                    <span>1年以内</span>
+                </a>
+                <a href="" class="carAge" data-info="1">
+                    <i></i>
+                    <span>3年以内</span>
+                </a>
+                <a href="" class="carAge" data-info="2">
+                    <i></i>
+                    <span>5年以内</span>
+                </a>
+                <a href="" class="carAge" data-info="3">
+                    <i></i>
+                    <span>5年以上</span>
+                </a>
+            </div>
+            <div class='gb-title'>
+                <span>变速箱</span>
+                <i></i>
+            </div>
+            <div class="gb-list">
+                <a href="" class="gear-box" data-info="0">
+                    <i></i>
+                    <span>自动</span>
+                </a>
+                <a href="" class="gear-box" data-info="1">
+                    <i></i>
+                    <span>手动</span>
+                </a>
+            </div>
+            <div class='dis-title'>
+                <span>里程</span>
+                <i></i>
+            </div>
+            <div class="dis-list">
+                <a href="" class="distance" data-info="0">
+                    <i></i>
+                    <span>1万公里以内</span>
+                </a>
+                <a href="" class="distance" data-info="1">
+                    <i></i>
+                    <span>3万公里以内</span>
+                </a>
+                <a href="" class="distance" data-info="2">
+                    <i></i>
+                    <span>5万公里以内</span>
+                </a>
+                <a href="" class="distance" data-info="3">
+                    <i></i>
+                    <span>10万公里以内</span>
+                </a>
+                <a href="" class="distance" data-info="4">
+                    <i></i>
+                    <span>10万公里以上</span>
+                </a>
+            </div>
+            <div class='pl-title'>
+                <span>排量</span>
+                <i></i>
+            </div>
+            <div class="pl-list">
+                <a href="" class="pl" data-info="0">
+                    <i></i>
+                    <span>1.0L及以下</span>
+                </a>
+                <a href="" class="pl" data-info="1">
+                    <i></i>
+                    <span>1.1L-1.6L</span>
+                </a>
+                <a href="" class="pl" data-info="2">
+                    <i></i>
+                    <span>1.7L-2.0L</span>
+                </a>
+                <a href="" class="pl" data-info="3">
+                    <i></i>
+                    <span>2.1L-2.5L</span>
+                </a>
+                <a href="" class="pl" data-info="4">
+                    <i></i>
+                    <span>2.6L-3.0L</span>
+                </a>
+                <a href="" class="pl" data-info="5">
+                    <i></i>
+                    <span>3.0L以上</span>
+                </a>
+            </div>
+            <div class='bz-title'>
+                <span>排放标准</span>
+                <i></i>
+            </div>
+            <div class="bz-list">
+                <a href="" class="bz" data-info="0">
+                    <i></i>
+                    <span>国五及以上</span>
+                </a>
+                <a href="" class="bz" data-info="1">
+                    <i></i>
+                    <span>国四及以上</span>
+                </a>
+                <a href="" class="bz" data-info="2">
+                    <i></i>
+                    <span>国三及以上</span>
+                </a>
+                <a href="" class="bz" data-info="3">
+                    <i></i>
+                    <span>低于国三</span>
+                </a>
+            </div>
+            <div class='from-title'>
+                <span>来源</span>
+                <i></i>
+            </div>
+            <div class="from-list">
+                <a href="" class="from" data-info="0">
+                    <i></i>
+                    <span>瓜子</span>
+                </a>
+                <a href="" class="from" data-info="1">
+                    <i></i>
+                    <span>人人车</span>
+                </a>
+                <a href="" class="from" data-info="2">
+                    <i></i>
+                    <span>本站</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hasSelect">
+        <span>已选：</span>
+        <div class="selected">
+            <span class="city-select select-text">城市:不限</span>
+        </div>
+        <div class="selected">
+            <span class="type-select select-text">品牌:不限</span>
+        </div>
+        <div class="selected">
+            <span class="price-select select-text" data-info="">价格:不限</span>
+        </div>
+        <div class="selected CarAge">
+            <span class="Age-select select-text" data-info="">车龄:</span>
+            <i class="select-i"></i>
+        </div>
+        <div class="selected gearBox">
+            <span class="gear-select select-text" data-info="">变速箱:</span>
+            <i class="select-i"></i>
+        </div>
+        <div class="selected Dis">
+            <span class="dis-select select-text" data-info="">里程:</span>
+            <i class="select-i"></i>
+        </div>
+        <div class="selected PL">
+            <span class="pl-select select-text" data-info="">排量:</span>
+            <i class="select-i"></i>
+        </div>
+        <div class="selected BZ">
+            <span class="bz-select select-text" data-info="">排放标准:</span>
+            <i class="select-i"></i>
+        </div>
+        <div class="selected FROM">
+            <span class="from-select select-text" data-info="">来源:</span>
+            <i class="select-i"></i>
+        </div>
+        <div id="formBtn">确认</div>
+    </div>
+    <div class="count">
+        <p>为你找到:<span><%= count %></span>辆车，当前<span><%= pageNow %></span>页， 共<span><%= allPage %></span>页</p>
+    </div>
+    <% if(items){%>
+        <div class="carCon">
+            <%items.forEach(function(item, index){%>
+                <div class="carList">
+                    <a href="carInfo?id=<%= item.id %>">
+                        <div class="carList-left">
+                            <img src="<%= picArr[index] %>" alt='<%= item.id%>'>
+                        </div>
+                        <div class="carList-right">
+                            <p class="carList-carname"><%= item.carname %></p>
+                            <p class="carList-carprice"><span><%= item.price%></span>万</p>
+                            <p class="carList-other"><%= item.spsj%> | <%= item.xslc%>万公里 | <%= item.place%></p>
+                            <p class="carList-other"><%= item.gh%>过户 | <%= item.isFrom%></p>
+                        </div>
+                    </a>
+                    <div class="btn-collection">
+                        <i></i>
+                        <span>我的收藏</span>
+                    </div>
+                </div>
+            <%})%>
+            <span ></span>
+        </div>
+    <%}%>
+    <ul class="page" style="clear: both">
+        <li></li>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <span>...</span>
+        <li>4</li>
+        <li></li>
+    </ul>
+  <script src="/javascripts/func.js"></script>
+  <script src="/javascripts/index.js"></script>
+  <script>
+     var pageNow = <%= pageNow %>;
+     var allPage = <%= allPage %>;
+     insertPage('page', pageNow, allPage);
+
+
+  </script>
+  </body>
+</html>

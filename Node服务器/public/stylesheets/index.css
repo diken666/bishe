@@ -1,0 +1,483 @@
+
+
+
+
+.select{
+    color: #fff;
+    background-color: #fd521d;
+}
+.select:hover{
+    color: #fff;
+}
+.search{
+    position: relative;
+    width: 1160px;
+    margin: 60px auto 10px auto;
+    background-color: #f8f8f8;
+    font-size: 13px;
+}
+.search span{
+    color: #999;
+}
+.city, .carname, .price, .more{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.city a, .carname a, .price a{
+    position: relative;
+    margin: 0 10px;
+    padding: 0 5px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+.more-car{
+    position: relative;
+    float: right;
+}
+.more-car i{
+    position: relative;
+    top: 12px;
+    float: right;
+    margin-right: 5px;
+    border-top: 5px solid #555;
+    border-right: 5px solid #f8f8f8;
+    border-left: 5px solid #f8f8f8;
+    border-bottom: none;
+    transition: all .1s;
+}
+.more-car span{
+    color: #000;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+.more-car:hover span{
+    color: #fd521d;
+}
+.more-car:hover i{
+    transform: rotate(180deg);
+    transition: all .1s
+}
+
+.all-car{
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: -20px;
+    border: 1px solid #fd521d;
+    width: 1160px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 100;
+}
+.all-left, .all-right{
+    position: relative;
+    width: 360px;
+    height: 100%;
+}
+.all-center{
+    position: relative;
+    margin: 0 400px;
+    height: 100%;
+}
+.all-right{
+    float: right;
+}
+.all-left{
+    float: left;
+}
+.car-list{
+    margin: 5px 0;
+    height: 30px;
+}
+.car-list span{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    float: left;
+    color: #fd521d;
+    font-weight: 700;
+    text-align: center;
+}
+.car-link{
+    display: inline-block;
+    float: right;
+    width: 320px;
+}
+.car-link a{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+    padding: 0;
+}
+.height-30px{
+    height: 30px;
+}
+.height-60px{
+    height: 60px;
+}
+.height-90px{
+    height: 90px;
+}
+.car-list:hover span{
+    background-color: #fd521d;
+    color: #fff;
+}
+
+
+
+
+.more{
+    border-bottom: none;
+}
+
+
+.ca-title, .gb-title, .dis-title, .pl-title, .bz-title, .from-title{
+    display: inline-block;
+    width: 60px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.bz-title{
+    width: 80px;
+}
+.ca-title{
+    margin-left: 10px;
+}
+.gb-title, .dis-title, .pl-title, .bz-title, .from-title{
+    margin-left: 20px;
+}
+.ca-title i, .gb-title i, .dis-title i, .pl-title i, .bz-title i, .from-title i{
+    display: block;
+    position: relative;
+    float: right;
+    top: 12px;
+    margin-right: 5px;
+    border-top: 5px solid #555;
+    border-right: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-bottom: none;
+    transition: all .1s;
+}
+
+.ca-title:hover span, .gb-title:hover span, .dis-title:hover span, .pl-title:hover span ,.bz-title:hover span, .from-title:hover span{
+    color: #fd521d !important;
+}
+.ca-title:hover i, .gb-title:hover i, .dis-title:hover i, .pl-title:hover i, .bz-title:hover i, .from-title:hover i{
+    transform: rotate(180deg);
+    transition: all .1s;
+}
+.ca-list, .gb-list, .dis-list, .pl-list, .bz-list, .from-list{
+    display: none;
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    z-index: 100;
+}
+.ca-list{
+    left: 53px;
+    width: 200px;
+    height: 100px;
+}
+.gb-list{
+    left: 158px;
+    width: 145px;
+    height: 40px;
+}
+.dis-list{
+    left: 264px;
+    width: 340px;
+    height: 100px;
+}
+.pl-list{
+    left: 369px;
+    width: 210px;
+    height: 150px;
+}
+.bz-list{
+    left: 475px;
+    width: 220px;
+    height: 100px;
+}
+.from-list{
+    left: 600px;
+    width: 220px;
+    height: 45px;
+ }
+.ca-list a, .gb-list a, .dis-list a, .pl-list a, .bz-list a, .from-list a{
+    display: inline-block;
+    margin: 5px  5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.ca-list a i, .gb-list a i, .dis-list a i, .pl-list a i, .bz-list a i, .from-list a i{
+    display: inline-block;
+    float: left;
+    margin: 9px 0 9px 10px;
+    width: 12px;
+    height: 12px;
+    background:url(../images/server/select.png) 12px 0;
+}
+.ca-list a:hover i, .gb-list a:hover i, .dis-list a:hover i, .pl-list a:hover i, .bz-list a:hover i, .from-list a:hover i{
+    background-position: 12px -12px;
+}
+.ca-list a:hover span, .gb-list a:hover span, .dis-list a:hover span, .pl-list a:hover span, .bz-list a:hover span, .from-list a:hover span{
+    color: #fd521d !important;
+}
+.ca-list a span, .gb-list a span, .dis-list a span, .pl-list a span, .bz-list a span, .from-list a span{
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.click i{
+    background:url(../images/server/select.png) 0 0 !important;
+}
+.click span{
+    color: #fd521d !important;
+}
+
+/*  hasSelect */
+.hasSelect{
+    position: relative;
+    width: 1160px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.selected{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #ffb39b;
+    cursor: pointer;
+}
+.selected:hover{
+    border: 1px solid #fd521d;
+}
+.selected:hover .select-text{
+    color: #fd521d;
+}
+.selected:hover .select-i{
+    background: #fd521d url(../images/server/close.png) 2px 2px;
+    background-size: 12px 12px;
+}
+.select-text{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.select-i{
+    position: relative;
+    display: inline-block;
+    margin-right: 3px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background: #ffb39b url(../images/server/close.png) 2px 2px;
+    background-size: 12px 12px;
+}
+.CarAge, .gearBox, .Dis, .PL, .BZ, .FROM{
+    display: none;
+}
+#formBtn{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fd521d;
+    color: #fff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+#formBtn:hover{
+    background-color: #fd321d;
+}
+#post{
+    display: none;
+}
+
+
+
+/*     count     */
+.count{
+    width: 1160px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin: 10px auto;
+}
+.count span{
+    color: #fd521d;
+}
+
+.carCon{
+    position: relative;
+    width: 1160px;
+    margin: 10px auto;
+
+}
+.carList{
+    position: relative;
+    float: left;
+    width: 560px;
+    height: 200px;
+    margin: 30px auto;
+    padding: 5px;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+.carList:hover{
+    box-shadow: 0 0 10px rgba(73,80,86,.8)
+}
+.carList:hover a{
+    color: #000;
+}
+.carList:nth-child(even){
+    margin-left: 10px;
+}
+.carList-left{
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carList-left img{
+    width: 300px;
+    height: auto;
+}
+.carList-right{
+    display: inline-block;
+    float: right;
+    height: 200px;
+    width: 250px;
+}
+.carList-carname{
+    /*height: 40px;*/
+    line-height: 20px;
+    margin-top: 10px;
+    /*overflow: hidden;*/
+    font-size: 16px;
+}
+.carList-carprice{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fd521d;
+    margin: 10px 0;
+}
+.carList-carprice span{
+    font-size: 20px;
+}
+.carList-other{
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+}
+.btn-collection{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 20px;
+    right: 150px;
+    background-color: #ffb39b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-collection:hover{
+    background-color: #fd521d;
+}
+.btn-collection i{
+    position: relative;
+    float: left;
+    top: 4px;
+    display: inline-block;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/server/add.png) 2px 2px no-repeat;
+    background-size: 16px 16px;
+}
+.btn-collection span{
+    position: relative;
+    margin-left: 5px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.page{
+    display: block;
+    position: relative;
+    width: 1160px;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+.page li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 50px 5px;
+    line-height: 40px;
+    overflow: hidden;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+.page span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 50px 5px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.page li:hover{
+    color: #fff;
+    background-color: #fd521d !important;
+    border: 1px solid #fd521d;
+}
+.page li:nth-child(1), .page li:nth-last-child(1){
+    background: url(../images/server/left.png) no-repeat;
+    background-size: 26px 26px;
+}
+.page li:nth-last-child(1){
+      background: url(../images/server/right.png) no-repeat;
+      background-size: 26px 26px;
+}
+.page li:nth-child(1){
+    background-position: 7px 7px;
+}
+.page li:nth-last-child(1){
+    background-position: 7px 7px;
+}
+.page li:nth-child(1):hover{
+    background: url(../images/server/leftWhite.png) 7px 7px no-repeat;
+    background-size: 26px 26px;
+}
+.page li:nth-last-child(1):hover{
+    background: url(../images/server/rightWhite.png) 7px 7px no-repeat;
+    background-size: 26px 26px;
+}
+.active{
+    background-color: #fd521d !important;
+    color: #fff !important;
+    border: 1px solid #fd521d !important;
+}

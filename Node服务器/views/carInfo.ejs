@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/carInfo.css'/>
+</head>
+<body>
+    <header class="header">
+    <div class="h-con">
+        <a class="logo" href="/"></a>
+        <div class="home">
+            <a href="/">首页</a>
+        </div>
+        <div class="func">
+            <a href="/">功能一</a>
+        </div>
+        <div class="func">
+            <a href="/">功能二</a>
+        </div>
+        <div class="func">
+            <a href="/">功能三</a>
+        </div>
+        <div class="func">
+            <a href="/">功能四</a>
+        </div>
+        <div class="noUser">
+            <a href="/userLogin">登录</a>
+            <i></i>
+            <a href="/register">注册</a>
+        </div>
+        <div class="hasUser">
+            <span>欢迎你，</span>
+            <a class="username" href="/"></a>
+            <a class='quit' href="/">/注销</a>
+        </div>
+    </div>
+</header>
+    <div class="mainInfo">
+        <div class="mainInfo-left">
+            <% var outsideArr = pic.outside.split('#')%>
+            <% var insideArr = pic.outside.split('#')%>
+            <% var engineArr = pic.outside.split('#')%>
+            <% var length = outsideArr.length+insideArr.length+engineArr.length%>
+            <%=  outsideArr.length+insideArr.length+engineArr.length %>
+            <img src="<%= outsideArr[0]%>" alt="" style="width: 200px; height: 100px;">
+        </div>
+    </div>
+    <script src="/javascripts/func.js"></script>
+    <script src="/javascripts/carInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="./stylesheets/register.css">
+</head>
+<body>
+<div class="container">
+    <p class="title">注册</p>
+    <form method="post">
+        <div class="item">
+            <span class="item-span">账号</span><input class='item-input' type="number" name="uid" required>
+        </div>
+        <div class="item">
+            <span class="item-span">密码</span><input class='item-input' type="password" name="password" required>
+        </div>
+        <div class="item">
+            <span class="item-span">姓名</span><input class="item-input" type="text" name="name" required>
+        </div>
+        <div class="item">
+            <span class="item-span">性别</span>
+            <select class='item-input' name="sex">
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+        <div class="item">
+            <span class="item-span">地址</span><input class="item-input" type="text" name="location" required>
+        </div>
+        <div class="item">
+            <span class="item-span">电话</span><input class="item-input" type="text" name="phone" required>
+        </div>
+        <div class="item-func">
+            <input type="submit" class="button blue" value="确定">
+            <input type="reset"  class="button yellow" value="重置">
+        </div>
+    </form>
+</div>
+<script>
+    window.onload = function(){
+        <% if(call){ %>
+        alert('该账号已被注册！')
+        <% }%>
+        <% if(msg !== '') {%>
+        alert('注册成功！')
+        window.location.href = '/userLogin'
+        <% }%>
+    }
+</script>
+</body>
+</html>

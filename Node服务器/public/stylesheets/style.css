@@ -1,0 +1,59 @@
+body,div,span,h1,h2,h3,p,blockquote,strong,b,u,i,center,ul,ol,li,form,label,button,input,textarea,th,td{margin:0;padding:0;}
+body{
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:hover{
+  color: #fd521d;
+}
+li{
+  list-style: none;
+}
+/*  header  */
+.header{
+  position:relative;
+  height: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+}
+.h-con{
+  display: block;
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo{
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background:url(../images/server/logo.jpg);
+  background-size: 100% auto;
+}
+
+.home, .func{
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.hasUser, .noUser{
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  font-size: 14px;
+}
+.hasUser{
+  display: none;
+}
+.noUser i{
+  height: 30px;
+  margin: 5px 7px;
+  border-right: 1px solid #000;
+}
